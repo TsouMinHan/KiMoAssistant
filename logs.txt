@@ -1,0 +1,156 @@
+2020.09.12
+removed:
+ - do not use import class.
+
+2020.09.11
+"2.2.12"
+fixed:
+ - img crawler show Content title variable error.
+
+improved:
+ - NoRssNews and RSSNews print "start notice" instead of send notify.
+
+2020.09.10
+"2.2.11"
+new:
+ - RSSNews add new website "toy-people".
+
+2020.09.09
+"2.2.10"
+improved:
+ - Change the wording of the log file.
+
+fixed:
+ - job_hyread_recommend() Taipei - Hyread incorrect recommend url lead to book link error.
+
+2020.09.08
+"2.2.9"
+new:
+ - PTT crawl new forum named "CompBook".
+
+2020.09.06
+"2.2.8"
+fixed:
+ - Baha remove redundant text at post time. 
+
+2020.09.05
+"2.2.7"
+improved:
+ - NoRssNews if no soup (meaning response not 200) end crawl the website.
+
+2020.09.04
+"2.2.6"
+fixed:
+ - TaazeDiscount get IndexError while book_price hasn't discount.
+
+2020.09.03
+"2.2.3"
+fixed:
+ - NoRssNews crawler duplicate article.
+
+"2.2.4"
+improved:
+ - NoRssNews get url with params by function, not format url.
+
+"2.2.5"
+fixed:
+ - NoRssNews ls not in the right for loop.
+
+2020.09.02
+"2.2.2"
+new.
+ - News add new website named "chainnews".
+ - News add new website named "Haze".
+ - News add new website named "abmedia".
+
+2020.09.01
+fixed:
+ - baha crawling ad trigger "TypeError".
+ - baha crawling filter title witch article was deleted.
+
+fixed:
+ - NoRssNews "Blocktempo" do not select title and link soup.
+ - NoRssNews do not insert list of article in while loop. It leads to inserting the article in the record page.
+
+new.
+ - add new job of hyread book recommend.
+
+2020.08.31
+improved:
+ - rewrite baha main_process function.
+
+fixed:
+ - baha crawling ad trigger error.
+
+improved:
+ - baha crawler show post time.
+
+2020.08.28
+add comment in job list.
+modify NS's gp number.
+
+2020.08.25
+modify all crawler's link output pattern.
+
+job table add new column "execution" and get record by ths column.
+
+fixed.
+ - Baha link "<>" issue.
+
+2020.08.17
+fixed.
+ - PTT img do not using cookies.
+
+change BAHA_IMG_FREQUENCY in config to constant.
+
+2020.08.14
+fixed.
+ - notify model: when system do not add msg, return function.
+
+2020.08.13
+fixed.
+ - rename remider table's title.
+ - schedule time.
+ - database start_time mistake.
+
+2020.08.12
+select job's record by weekday, so remove unnecessary functions of schedule.
+
+2020.08.11
+add job_remider.
+
+using "log" decorator to show and record log in all job functions.
+
+2020.08.10
+references job table(channel) to channel table(id). Use for separate discord channel id.
+job_clean send notify:
+ - NewsDB.clean return the number of deleted columns.
+ - BahaDB.clean return the number of deleted columns.
+
+fix some bugs.
+change directory structure.
+
+2020.08.07
+remove Book's text prompt.
+
+2020.08.06
+remove text prompt.
+optimizing PTTGamesaleArticles.
+changing BahaImg frequency.
+add TenlongDiscount.
+
+2020.08.04
+add clean job.
+fixed.
+
+2020.08.03
+finish Img.
+finish PTT.
+
+2020.08.02
+finish NEWS.
+finish Baha.
+finish Book.
+
+2020.07.31
+start new project.
